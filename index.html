@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BN 31 Form</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+  <h1>BN 31 Form</h1>
+  <form action="Data.php">
+    <div>
+      <label for="nm">Name:</label>
+      <input id="nm" type="text" name="name" placeholder="Maa Babar deua naam:" required>
+    </div>
+    <div>
+      <label for="snm">NickName: </label>
+      <input id="snm" type="text" name="nickname" placeholder="Freinds er deua sundor naam:" required>
+     </div>
+     <div>
+      <label for="dob">DOB:</label>
+      <input id="dob" type="date" name="dob" placeholder="Asol da deis" required>
+     </div>
+     <div>
+      <label for="gen">Gender:</label>
+      <select id="gen" name="gender" required>
+        <option value="" disabled selected>Third number ta koekjoner leiga</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="others">Others</option>
+      </select>
+     </div>
+     <div>
+       <p>Age Category:</p>
+       <input id="18+" type="radio" name="age" value="18+">
+       <label for="18+">18+</label>
+       <input id="Baicha" type="radio" name="age" value="Baicha">
+       <label for="Baicha">Baicha</label>
+     </div>
+     <div>
+      <label for="tnm">Favourite Teacher's Name:</label>
+      <input id="tnm" type="text" name="teacher_name" placeholder="Bhalo naam" required>
+    </div>
+    <div>
+      <label for="tnnm">Favourite Teacher's NickName:</label>
+      <input id="tnnm" type="text" name="teacher_nickname" placeholder="Suddho naam" required>
+    </div>
+    <div>
+      <label for="comment">Comment: </label>
+      <textarea id="comment" name="comment" placeholder="Kemon laglo" required></textarea>
+    </div>
+    <div>
+      <h5>Submit here:</h5>
+      <button type="submit">Submit</button>
+    </div>
+    
+  </form>
+
+</body>
+</html>
